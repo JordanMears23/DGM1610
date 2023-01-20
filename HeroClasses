@@ -1,0 +1,37 @@
+using System;
+					
+public class Program
+{
+	public Hero heroOne;
+	public Hero heroTwo;
+	
+	public void Main()
+	{
+		heroOne = new Hero();
+		heroTwo = new Hero();
+		
+		heroOne.health = 85;
+		heroOne.powerLevel = 5;
+		heroOne.ability = "Quick Attack";
+		
+		heroTwo.health = 74;
+		heroTwo.powerLevel = 4;
+		heroTwo.ability = "Laser Beam";
+		
+		
+		Console.WriteLine("Hero One Uses " + heroOne.ability + ".");
+		Console.WriteLine("Overall Level Increase to " + heroOne.powerLevel + ".");
+		
+		Console.WriteLine("Hero Two is Hit! Health is now " + heroTwo.health + ".");
+		Console.WriteLine("Hero Two Uses " + heroTwo.ability + ".");
+		Console.WriteLine("Overall Level Increase to " + heroTwo.powerLevel + ".");
+		
+		Console.WriteLine("Hero One is Hit! Health is now " + heroOne.health + "." );
+	}
+}
+
+public class Hero {
+	public int health;
+	public int powerLevel;
+	public string ability; 
+}
