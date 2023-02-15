@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class FixedUpdate : MonoBehaviour
+public class UpdateAndFixedUpdate : MonoBehaviour
 {
     void FixedUpdate ()
     {
