@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class CollisionDetect : MonoBehaviour
 {
-    void OnTriggerEnter(Collider other)
+	  private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);//Destory this gameobject
-        Destroy(other.gameObject);//destory gameobject that is hit
+        if (other.gameObject.CompareTag("UFO"))
+        {
+            Destroy(gameObject);//Destory this Lazerbolt gameobject
+			Destroy(other.gameObject);//destory UFO gameobject that is hit
+        }
     }
+    
 }

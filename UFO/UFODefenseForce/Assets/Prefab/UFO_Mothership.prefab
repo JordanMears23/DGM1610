@@ -15,10 +15,9 @@ GameObject:
   - component: {fileID: 4300331081741096800}
   - component: {fileID: 2978771353859132740}
   - component: {fileID: 9021433223575270264}
-  - component: {fileID: 8486270445331380758}
   m_Layer: 0
   m_Name: UFO_Mothership
-  m_TagString: Untagged
+  m_TagString: UFO
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,15 +143,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8486270445331380758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 466076966326937137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a9c8708ff7102544bf44c80cd2d1f5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
