@@ -14,12 +14,8 @@ public class EnemySpawnManager : MonoBehaviour
 	{
 		InvokeRepeating("SpawnRandomUFO", startDelay, spawnInterval);
 	}
-    void Update()
-    {
-
-	}
 	
-void SpawnRandomUFO()
+	void SpawnRandomUFO()
 		{
 			Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX,spawnRangeX),0,spawnPositionZ);
 			int ufoIndex = Random.Range(0,ufoPrefabs.Length); //Picks a random UFO from the array

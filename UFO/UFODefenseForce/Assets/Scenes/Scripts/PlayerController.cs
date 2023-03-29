@@ -10,6 +10,12 @@ public class PlayerController : MonoBehaviour
 
     public Transform blaster;
     public GameObject lazerBolt;
+    public GameManager gameManager;
+
+    void Start()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>(); //Reference gamemanager script on gamemanager object
+    }
     
     void Update()
     {
@@ -28,7 +34,7 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
         //if spacebar is pressed fire lazerbolt
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && gameManager.isGameOver == false) // Second condition gamemamanger.isgameover prevents the player from shooting after isgameover becomes active
         {
             //create lazerbolt at the blaster transform position maintaining the object rotation
             Instantiate(lazerBolt, blaster.transform.position, lazerBolt.transform.rotation);
