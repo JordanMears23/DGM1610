@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8869837245672022461}
   - component: {fileID: -5606296955655437148}
   - component: {fileID: 3928614740279371696}
+  - component: {fileID: -3148184314270360771}
   m_Layer: 0
   m_Name: UFO_Scout
   m_TagString: UFO
@@ -128,6 +129,7 @@ MonoBehaviour:
   topBounds: 30
   lowerBounds: -10
   gameManager: {fileID: 0}
+  endAudio: {fileID: 8300000, guid: 9275ef474c4fc954d976e403bb0180a4, type: 3}
 --- !u!54 &3928614740279371696
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -144,3 +146,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-3148184314270360771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3262501231648317576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3120f2f2db09484f9eab9821cdb7ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 36a27b12812362d40926d3568a7d91f2, type: 3}

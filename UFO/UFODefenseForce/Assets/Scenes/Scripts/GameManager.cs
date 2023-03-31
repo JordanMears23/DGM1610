@@ -32,5 +32,6 @@ public class GameManager : MonoBehaviour
     {
         gameOverText.gameObject.SetActive(true); // Make Game over text appear
         Time.timeScale = 0; //Freeze Time
+	
     }
 }

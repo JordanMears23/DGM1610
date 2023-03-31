@@ -7,6 +7,7 @@ public class DestroyOutOfBounds : MonoBehaviour
     public float topBounds = 30.0f;
     public float lowerBounds = -10.0f;
 	public GameManager gameManager; //Store reference to GameManager
+	public AudioClip endAudio;
 	
 void Start()
 {
@@ -26,5 +27,9 @@ void Start()
 			gameManager.isGameOver = true;
 
         }
+		if(gameManager.isGameOver == true)
+		{
+			AudioSource.PlayClipAtPoint(endAudio, transform.position);
+		}
     }
 }

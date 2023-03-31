@@ -7,6 +7,7 @@ public class CollisionDetect : MonoBehaviour
 	public ScoreManager scoreManager; //Store reference to score manager 
 	public int scoreToGive;
 
+
 	void Start()
 	{
 	 scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>(); //Find ScoreManager gameobject and reference ScoreManager script component
@@ -20,6 +21,8 @@ public class CollisionDetect : MonoBehaviour
             Destroy(gameObject);//Destory this Lazerbolt gameobject
 			Destroy(other.gameObject);//destory UFO gameobject that is hit
         }
+
+		
     }
-    
+   
 }
