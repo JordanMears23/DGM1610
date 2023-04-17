@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed551f13e556f5a429a24e3c7c063384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seconds: 3
+  seconds: 4
 --- !u!54 &-5031199474642324544
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -193,9 +193,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idObj: {fileID: 0}
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
   matchEvent:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 11400000, guid: c69793e4b12df9244b4b9dc045bd4bff, type: 2}
+        m_TargetAssemblyTypeName: IntData, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: cc29eb3ae1e2ace43969af467f26c4a8, type: 2}
+        m_TargetAssemblyTypeName: IntData, Assembly-CSharp
+        m_MethodName: CompareValue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: c69793e4b12df9244b4b9dc045bd4bff, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1426166239431818754}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
@@ -224,6 +251,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 825aca1c626663e46a96121c5cec948e, type: 2}
+        m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
+        m_MethodName: RaiseAction
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -263,6 +302,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: a5ed0e0eb92be3d4dab4d56a72b2de39, type: 2}
+        m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
+        m_MethodName: RaiseAction
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
